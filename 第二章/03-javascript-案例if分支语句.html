@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction(){
+        var x="";
+        var num=10;
+        if (num<20){
+            x="num 小于  20";
+        }
+
+        else{
+            x="num 条件不成立, 不小于20";
+        }
+        document.getElementById("demo").innerHTML=x;
+        }
+
+    </script>
+</head>
+<body>
+    <p>查看if判断语句结果</p>
+    <button onclick="myFunction()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>
