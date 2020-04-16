@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //变量的交换
+        //第一个思路：使用第三方的变量进行交换
+        var num1=10;
+        var num2=20;
+        //把num1这个变量的值取出来放在临时变量temp变量中
+        var temp=num1;
+
+        //把num2这个变量的值重新赋值给num1变量中
+        num1=num2;
+        //把temp这个变量的值重新赋值给num2变量中
+        num2=temp;
+
+        //输出结果到console里
+        console.log(num1);
+        console.log(num2);
+
+
+        //第二种方式交换：一般适用于数字的交换
+        var a_num1=10;
+        var b_num2=20;
+        
+        //把a_num1的变量中的值和num2变量中的值，取出来相加，重新赋值给num1这个变量
+        a_num1=a_num1+b_num2;   //那么现在a_num1的值是30
+        b_num2=a_num1-b_num2;   //已知上面a_num1已经是30了， a_num1-b_num2那个得出了b_num2的结果;
+        a_num1=a_num1-b_num2;
+        console.log(b_num2);
+        console.log(a_num1)
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

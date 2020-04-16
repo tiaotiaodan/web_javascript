@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //if多分支猜年龄游戏
+        function myFunction(){
+            var x="";
+            var num=20;
+            if(num==20){
+                x="以猜中";
+            }
+            else if(num>=13 && num<=16){
+                x="有些偏差，请继续猜：";
+            }
+            else{
+                x="未猜中";
+            }
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</head>
+<body>
+    <p>查看if判断语句结果</p>
+    <button onclick="myFunction()">点击这里</button>
+    <p id="demo"></p>
+</body>
+</html>
